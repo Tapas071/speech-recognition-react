@@ -10,8 +10,7 @@ import useClipboard from "react-use-clipboard";
 export default function App() {
   const {
     transcript,
-    listening,
-    resetTranscript,
+
     browserSupportsSpeechRecognition,
   } = useSpeechRecognition();
 
