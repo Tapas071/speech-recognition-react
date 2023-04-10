@@ -54,14 +54,14 @@ export default function App() {
           </button>
 
           <button onClick={startListening} className="startListenting">
-            StartListening
+            Start Listening
           </button>
 
           <button
             onClick={SpeechRecognition.stopListening}
             className="stopListening"
           >
-            StopListening
+            Stop Listening
           </button>
         </div>
         <div className="par">
