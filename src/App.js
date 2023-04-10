@@ -65,7 +65,7 @@ export default function App() {
           </button>
         </div>
         <div className="par">
-          Made with with ❤️ by Tapas Mondal &#169;{" "}
+          Made with ❤️ by Tapas Mondal &#169;{" "}
           <a href="https://github.com/Tapas071?tab=projects"> Tapas071</a>
         </div>
       </div>
