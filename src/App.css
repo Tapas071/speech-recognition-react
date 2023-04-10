@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+}
+.h11 {
+  text-shadow: #fc0 1px 0 10px;
+}
+
+.contain {
+  background-color: white;
+  height: 50%;
+  width: 75%;
+  /* border: 10px solid green; */
+  /* border-radius: 5%;
+   */
+  border-radius: max(0px, min(16px, (100% - 400px + 1px) * 9999)) / 16px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  /* background-color: brown; */
+}
+.header {
+  position: absolute;
+  top: 10px;
+  /* left: 10px; */
+  width: 100%;
+  text-align: center;
+  /* background-color: #0ff; */
+}
+.body {
+  margin: 4%;
+  position: absolute;
+  height: 50%;
+  width: 60%;
+  border: 2px solid whitesmoke;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+  /* bottom: 10px; */
+  /* background-color: #0ff; */
+}
+.main-controls {
+  /* background-color: #0f0; */
+  position: absolute;
+  bottom: 10%;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+
+  /* bottom: ; */
+  /* background-color: #ff0; */
+}
+.stopListening,
+.copy,
+.startListenting {
+  text-align: center;
+  font-size: medium;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+/*  text shadow properties ---> 
+text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+text-shadow: #FC0 1px 0 10px; */
+/* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+
+.para {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+}
+
+.fancy {
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    background-image: url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='%2300A080' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='%2300FDCF'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='%2300FDCF'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='%23008060'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-size: 110% auto;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+.main-text {
+  /* color: blue; */
+  color: #7a7c7f;
+  font-size: 16px;
+  font-family: "Libre Baskerville", serif;
+  line-height: 20px;
+  text-align: center;
+  text-shadow: 0 1px 1px #fff;
+  padding-top: 20px;
+}
+
+.startListenting:hover,
+.copy:hover,
+.stopListening:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+.par {
+  position: fixed;
+  bottom: 10px;
+  background-color: #ff0;
+}
